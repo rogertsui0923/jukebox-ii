@@ -14,6 +14,11 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
 
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
     <!-- Custom scripts -->
     <script src="player.js"></script>
     <script src="main.js"></script>
@@ -31,14 +36,24 @@
       </h1>
 
       <!-- Song queue -->
+      <p id="message">Enter a song to play</p>
+      <button class="btn btn-primary active repeat" data-toggle="button">Repeat</button>
+
       <ul id="song-queue">
       </ul>
 
       <!-- Song form -->
       <form id='song-form'>
-        <input name="notes" class="form-control" type="text" placeholder="Enter song notes..."/>
+        <input name="name" class="form-control name" type="text" placeholder="Enter song name..."/>
+        <input name="notes" class="form-control notes" type="text" placeholder="Enter song notes..."/>
         <input class="btn btn-default" type="submit" value="Add Song">
       </form>
+
+      <br>
+      <hr>
+      <h4>Played songs</h4>
+      <ul id="played-queue">
+      </ul>
 
     </div>
   </body>

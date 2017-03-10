@@ -1,0 +1,12 @@
+Start playing songs as above when you press "spacebar". Make sure you can still
+enter songs properly in the form (the songs shouldn't start playing if you enter
+a space while writing the song's notes).
+
+
+Played songs should be moved to a Played list. Songs from the played list
+should:
+
+Add a Repeat button that when toggled will cause the queue to repeat its songs
+instead of deleting them (or, moving them to the Played list).
+When songs are playing Play All should turn into a Pause button, clicking it
+will pause the queue and turn it into a Play All button again.

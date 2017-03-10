@@ -1,4 +1,4 @@
-#song-queue {
+#song-queue, #played-queue {
   list-style:none;
   padding-left: 0;
   min-height: 150px;
@@ -7,7 +7,7 @@
   padding: 5px;
 }
 
-#song-queue li {
+#song-queue li, #played-queue li {
   border-color: #282828;
   margin-bottom: 20px;
   background-color: #222222;
@@ -24,6 +24,20 @@
   float: left;
 }
 
+#song-form input[name="name"] {
+  max-width: 500px;
+  margin-right: 1em;
+  float: left;
+}
+
 #play-button {
+  float: right;
+}
+
+li .notes {
+  display: none;
+}
+
+li button {
   float: right;
 }
